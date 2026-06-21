@@ -5,4 +5,4 @@ nb_frames=193
 r_frame_rate=0/0
 nb_frames=378
 duration=8.041667
-size=1063612
+size=1292898
