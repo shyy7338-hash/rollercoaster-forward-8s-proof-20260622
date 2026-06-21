@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>북극 오르막 실제전진 8초 직접생성 3차</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #07121f;
+      color: #eef6ff;
+    }
+
+    body {
+      margin: 0;
+      background: #07121f;
+    }
+
+    main {
+      width: min(1120px, calc(100vw - 28px));
+      margin: 0 auto;
+      padding: 22px 0 36px;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(22px, 4vw, 38px);
+      line-height: 1.2;
+      font-weight: 760;
+    }
+
+    p {
+      margin: 0 0 18px;
+      color: #b8c8da;
+      line-height: 1.55;
+      font-size: 15px;
+    }
+
+    video, img {
+      width: 100%;
+      display: block;
+      background: #000;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    video {
+      aspect-ratio: 896 / 512;
+    }
+
+    section {
+      margin-top: 24px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      line-height: 1.3;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 16px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .meta li {
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      padding: 7px 10px;
+      color: #dcecff;
+      font-size: 13px;
+      background: rgba(255, 255, 255, 0.05);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>북극 오르막 실제전진 8초 직접생성 3차</h1>
+    <p>GPT 기준 이미지를 ComfyUI/LTX로 직접 생성한 8초 후보입니다. 기존 참고 영상 편집본이 아니라 새 생성 결과입니다.</p>
+
+    <video controls playsinline preload="metadata" src="./video.mp4"></video>
+
+    <ul class="meta">
+      <li>8.041667초</li>
+      <li>896 x 512</li>
+      <li>24fps</li>
+      <li>193프레임</li>
+      <li>scene 0.35 컷 감지 0</li>
+    </ul>
+
+    <section>
+      <h2>전체 1초 간격 검수</h2>
+      <img src="./qa-full.png" alt="전체 1초 간격 검수 프레임">
+    </section>
+
+    <section>
+      <h2>레일 중앙 0.5초 간격 검수</h2>
+      <img src="./qa-rail.png" alt="레일 중앙 0.5초 간격 검수 프레임">
+    </section>
+  </main>
+</body>
+</html>
