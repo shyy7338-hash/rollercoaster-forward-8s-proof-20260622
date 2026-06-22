@@ -1,0 +1,43 @@
+숲 4차 속도강화 정밀 분석 요약
+원본: C:\Users\shyy7\Desktop\ai영상\숲_오르막_실제전진_8초_속도강화_4차.mp4
+width=896
+height=512
+r_frame_rate=24/1
+duration=8.041667
+nb_frames=193
+frames_analyzed=193
+rail_diff median=11.090 mad=3.053 max=17.482
+full_diff median=8.232 mad=0.505 max=15.030
+centroid_motion median=0.007 mad=0.003 max=0.022
+rail_sharpness median=500.2 min=280.6
+forward_speed_proxy flow_mag median=1.0531
+forward_flow_y median=0.4177
+compare_vs_baseline speed_ratio=3.62x rail_change_ratio=3.14x sharpness_delta=-67.1
+
+튀는 프레임 후보 top12:
+- 3.875s frame 93: rail_diff=17.48, rail_z=1.41, local_spike=0.45, centroid_z=3.19, sharp=428.4, flow=3.021
+- 4.083s frame 98: rail_diff=17.23, rail_z=1.36, local_spike=0.37, centroid_z=2.01, sharp=501.0, flow=3.259
+- 3.750s frame 90: rail_diff=16.17, rail_z=1.12, local_spike=0.00, centroid_z=3.14, sharp=443.7, flow=3.224
+- 3.417s frame 82: rail_diff=13.39, rail_z=0.51, local_spike=0.35, centroid_z=3.11, sharp=414.2, flow=2.632
+- 3.917s frame 94: rail_diff=17.42, rail_z=1.40, local_spike=0.38, centroid_z=-0.76, sharp=419.7, flow=3.307
+- 3.792s frame 91: rail_diff=16.24, rail_z=1.14, local_spike=0.00, centroid_z=2.05, sharp=454.6, flow=2.919
+- 4.208s frame 101: rail_diff=17.39, rail_z=1.39, local_spike=0.28, centroid_z=0.61, sharp=429.1, flow=3.113
+- 5.875s frame 141: rail_diff=14.13, rail_z=0.67, local_spike=0.72, centroid_z=0.68, sharp=473.0, flow=1.365
+- 4.417s frame 106: rail_diff=16.46, rail_z=1.19, local_spike=0.19, centroid_z=-1.13, sharp=463.9, flow=3.439
+- 3.708s frame 89: rail_diff=15.59, rail_z=0.99, local_spike=0.00, centroid_z=2.01, sharp=410.2, flow=2.806
+- 4.167s frame 100: rail_diff=16.76, rail_z=1.25, local_spike=-0.47, centroid_z=1.34, sharp=504.7, flow=3.014
+- 4.375s frame 105: rail_diff=16.82, rail_z=1.27, local_spike=0.36, centroid_z=0.12, sharp=439.9, flow=3.091
+
+레일 뭉개짐/선명도 낮은 후보 top12:
+- 4.625s frame 111: sharp=280.6, rail_diff=12.95, flow=2.865
+- 4.875s frame 117: sharp=293.9, rail_diff=12.51, flow=2.357
+- 4.708s frame 113: sharp=303.8, rail_diff=11.89, flow=2.266
+- 4.958s frame 119: sharp=311.3, rail_diff=12.19, flow=1.885
+- 4.583s frame 110: sharp=315.4, rail_diff=14.10, flow=3.112
+- 4.917s frame 118: sharp=315.6, rail_diff=11.85, flow=1.921
+- 4.792s frame 115: sharp=319.1, rail_diff=11.86, flow=2.240
+- 4.750s frame 114: sharp=324.1, rail_diff=12.21, flow=2.191
+- 4.667s frame 112: sharp=340.4, rail_diff=12.27, flow=2.573
+- 4.542s frame 109: sharp=347.9, rail_diff=14.53, flow=2.781
+- 4.833s frame 116: sharp=355.2, rail_diff=12.29, flow=2.275
+- 5.542s frame 133: sharp=357.4, rail_diff=11.51, flow=1.305
