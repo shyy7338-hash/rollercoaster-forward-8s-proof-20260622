@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>숲 오르막 롤러코스터 8초 1차</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #10140f;
+      color: #f4f7ef;
+    }
+
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #10140f 0%, #182315 52%, #0d100d 100%);
+    }
+
+    main {
+      width: min(1120px, calc(100% - 28px));
+      margin: 0 auto;
+      padding: 18px 0 40px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(22px, 4vw, 36px);
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0 0 16px;
+      color: #d7dfcf;
+      font-size: 15px;
+      line-height: 1.65;
+    }
+
+    video, img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      background: #050805;
+      box-shadow: 0 18px 50px rgba(0, 0, 0, .36);
+    }
+
+    section {
+      margin-top: 28px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 18px;
+      letter-spacing: 0;
+    }
+
+    pre {
+      overflow: auto;
+      padding: 14px;
+      border-radius: 8px;
+      background: rgba(0, 0, 0, .35);
+      color: #e9f2e0;
+      font-size: 13px;
+      line-height: 1.5;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>숲 오르막 롤러코스터 8초 1차</h1>
+    <p>북극 성공본의 구도와 LTX 설정을 숲 지대에 그대로 대입한 테스트입니다. 나무 밀도를 낮추고 레일 디테일을 과하게 만들지 않아서 뭉개짐 위험을 줄였습니다.</p>
+
+    <video src="video.mp4?v=forest-1" controls playsinline preload="metadata"></video>
+
+    <section>
+      <h2>1초 간격 검수</h2>
+      <img src="qa-1s.jpg?v=forest-1" alt="숲 오르막 영상 1초 간격 검수 이미지">
+    </section>
+
+    <section>
+      <h2>튀는 프레임 후보</h2>
+      <img src="qa-jump.png?v=forest-1" alt="숲 오르막 영상 튀는 프레임 후보 검수 이미지">
+    </section>
+
+    <section>
+      <h2>정밀분석 요약</h2>
+      <pre>숲 1차 정밀 분석 요약
+width=896
+height=512
+r_frame_rate=24/1
+duration=8.041667
+nb_frames=193
+rail_diff median=2.289 mad=0.174 max=3.196
+full_diff median=3.637 mad=0.341 max=5.957
+centroid_motion median=0.008 mad=0.004 max=0.111
+
+판단:
+- 가장 큰 튐 후보는 0.083초 시작 프레임.
+- 1초 간격 요약에서 구도 유지 양호.
+- 후반 선명도 후보는 낮게 잡히지만 큰 붕괴보다는 후반부 부드러움에 가까움.
+- 사용자가 직접 확인 후 통과하면 성공 사례로 승격.</pre>
+    </section>
+  </main>
+</body>
+</html>
