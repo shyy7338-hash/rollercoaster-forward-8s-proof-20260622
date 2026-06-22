@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>숲 오르막 북극참조 8초 6차</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #10140f;
+      color: #f4f7ef;
+    }
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #10140f 0%, #172315 52%, #0b100c 100%);
+    }
+    main {
+      width: min(1120px, calc(100% - 28px));
+      margin: 0 auto;
+      padding: 18px 0 40px;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(22px, 4vw, 36px);
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+    p {
+      margin: 0 0 16px;
+      color: #dbe5d5;
+      font-size: 15px;
+      line-height: 1.65;
+    }
+    video, img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      background: #050805;
+      box-shadow: 0 18px 50px rgba(0, 0, 0, .36);
+    }
+    section {
+      margin-top: 28px;
+    }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 18px;
+      letter-spacing: 0;
+    }
+    pre {
+      overflow: auto;
+      padding: 14px;
+      border-radius: 8px;
+      background: rgba(0, 0, 0, .35);
+      color: #e9f2e0;
+      font-size: 13px;
+      line-height: 1.5;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>숲 오르막 북극참조 8초 6차</h1>
+    <p>북극 8초 성공본을 참조해 레일 중심감과 전진감을 맞춘 숲 후보입니다. 언덕 모양은 조금 달라도 같은 레일을 타고 앞으로 가는 느낌을 우선했습니다.</p>
+
+    <video src="video.mp4?v=forest-railmatch-6" controls playsinline preload="metadata"></video>
+
+    <section>
+      <h2>북극 기준 이미지 비교</h2>
+      <img src="compare-image.png?v=forest-railmatch-6" alt="북극 기준 이미지와 숲 새 이미지 비교">
+    </section>
+
+    <section>
+      <h2>1초 간격 검수</h2>
+      <img src="qa-1s.jpg?v=forest-railmatch-6" alt="숲 6차 1초 간격 검수 이미지">
+    </section>
+
+    <section>
+      <h2>레일 선명도 낮은 후보</h2>
+      <img src="qa-blur.jpg?v=forest-railmatch-6" alt="숲 6차 레일 선명도 낮은 후보">
+    </section>
+
+    <section>
+      <h2>튀는 프레임 후보</h2>
+      <img src="qa-jump.jpg?v=forest-railmatch-6" alt="숲 6차 튀는 프레임 후보">
+    </section>
+
+    <section>
+      <h2>정밀분석 요약</h2>
+      <pre>숲 6차 북극참조 정밀 분석 요약
+width=896
+height=512
+r_frame_rate=24/1
+duration=8.041667
+nb_frames=193
+rail_diff median=10.441 max=15.242
+full_diff median=6.510
+rail_sharpness median=578.8 min=363.0
+forward_speed_proxy flow_mag median=1.1663
+
+compare_vs_4차:
+- speed_ratio=1.11x
+- sharpness_delta=+78.6
+- rail_change_ratio=0.94x
+
+compare_vs_1차:
+- speed_ratio=4.01x
+- sharpness_delta=+11.5
+- rail_change_ratio=2.95x
+
+판단:
+- 4차보다 속도는 유지/소폭 증가.
+- 4차보다 레일 선명도 개선.
+- 지금까지 숲 후보 중 북극 레일 전진감에 가장 가까운 공유 후보.</pre>
+    </section>
+  </main>
+</body>
+</html>
