@@ -1,0 +1,39 @@
+숲 1차 정밀 분석 요약
+원본: C:\Users\shyy7\Desktop\ai영상\숲_오르막_실제전진_8초_균형_1차.mp4
+width=896
+height=512
+r_frame_rate=24/1
+duration=8.041667
+nb_frames=193
+frames_analyzed=193
+rail_diff median=2.289 mad=0.174 max=3.196
+full_diff median=3.637 mad=0.341 max=5.957
+centroid_motion median=0.008 mad=0.004 max=0.111
+
+튀는 프레임 후보 top12:
+- 0.083s frame 2: rail_diff=3.20, rail_z=5.21, local_spike=0.91, centroid_z=26.76, sharp=853.0
+- 4.417s frame 106: rail_diff=2.82, rail_z=3.03, local_spike=0.22, centroid_z=2.52, sharp=863.1
+- 1.917s frame 46: rail_diff=2.55, rail_z=1.52, local_spike=0.34, centroid_z=5.57, sharp=845.2
+- 5.750s frame 138: rail_diff=2.60, rail_z=1.81, local_spike=0.35, centroid_z=3.36, sharp=801.4
+- 3.750s frame 90: rail_diff=2.82, rail_z=3.06, local_spike=0.26, centroid_z=0.36, sharp=871.2
+- 6.417s frame 154: rail_diff=2.45, rail_z=0.90, local_spike=0.29, centroid_z=4.95, sharp=785.0
+- 3.083s frame 74: rail_diff=2.77, rail_z=2.75, local_spike=0.31, centroid_z=-0.21, sharp=869.2
+- 1.417s frame 34: rail_diff=2.62, rail_z=1.89, local_spike=0.50, centroid_z=1.30, sharp=834.0
+- 5.083s frame 122: rail_diff=2.65, rail_z=2.10, local_spike=0.25, centroid_z=0.69, sharp=846.7
+- 2.417s frame 58: rail_diff=2.70, rail_z=2.37, local_spike=0.41, centroid_z=-1.10, sharp=851.5
+- 0.750s frame 18: rail_diff=2.54, rail_z=1.45, local_spike=0.37, centroid_z=0.14, sharp=828.1
+- 7.417s frame 178: rail_diff=2.30, rail_z=0.05, local_spike=0.34, centroid_z=0.80, sharp=772.0
+
+레일 뭉개짐/선명도 낮은 후보 top12:
+- 7.750s frame 186: sharp=756.0, rail_diff=2.17
+- 7.708s frame 185: sharp=758.3, rail_diff=1.88
+- 7.583s frame 182: sharp=759.5, rail_diff=2.13
+- 7.792s frame 187: sharp=759.7, rail_diff=1.79
+- 7.375s frame 177: sharp=762.8, rail_diff=1.97
+- 7.625s frame 183: sharp=763.6, rail_diff=2.02
+- 7.875s frame 189: sharp=764.2, rail_diff=2.00
+- 7.542s frame 181: sharp=765.7, rail_diff=1.95
+- 7.917s frame 190: sharp=766.9, rail_diff=2.01
+- 7.958s frame 191: sharp=768.0, rail_diff=2.00
+- 7.833s frame 188: sharp=769.8, rail_diff=1.68
+- 7.208s frame 173: sharp=771.4, rail_diff=1.96
